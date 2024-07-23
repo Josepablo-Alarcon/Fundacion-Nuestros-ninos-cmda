@@ -1,0 +1,55 @@
+* {
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+    
+}
+
+body {
+    min-height: 100vh;
+    background: url('background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100x;
+  background: seagreen;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+} 
+
+.logo {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navbar a {
+    font-size:  18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.anavbar a ::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
