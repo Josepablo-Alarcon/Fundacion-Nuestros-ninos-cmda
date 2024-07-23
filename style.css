@@ -8,7 +8,7 @@ box-sizing: border-box;
 
 body {
     min-height: 100vh;
-    background: url('background.jpg') no-repeat;
+    background-image: url(./Assent/img/Logo_v2.png);
     background-size: cover;
     background-position: center;
 
@@ -20,7 +20,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 100x;
-    background: seagreen;
+    background: transparent;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,25 +29,29 @@ body {
 
 .logo {
     font-size: 32px;
-    color: #fff;
+    color: purple;
     font-weight: 500;
     text-decoration: none;
 }
 
 .navbar a {
+    position: relative;
     font-size:  18px;
-    color: #fff;
+    color: purple;
     font-weight: 500;
     text-decoration: none;
+    margin-left: 40px;
 }
 
-.anavbar a ::before {
+.navbar a::before {
     content: '';
     position: absolute;
+    top: 100%;
     left: 0;
     width: 0;
     height: 2px;
-    background: #fff;
+    background: rgb(255, 255, 255);
+    transition: .3s;
 }
 
 .navbar a:hover::before {
