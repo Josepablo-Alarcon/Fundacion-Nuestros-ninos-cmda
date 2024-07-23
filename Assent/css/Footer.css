@@ -7,6 +7,12 @@
     text-decoration:none;
 
 }
+.Decoration{
+    position: relative;
+    top: 10px;
+    height: 4px;
+    background-color: blueviolet;
+}
 Footer{
     height: 250px;
     border-top: 1.5px solid;
@@ -16,7 +22,7 @@ Footer{
     background-color: black;
     /* Posicion */
     position: relative;
-    top: 67vh;
+    top: 63vh;
 
 }
 Footer .Footer-main{
