@@ -15,16 +15,16 @@ body {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px 100x;
-  background: seagreen;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100x;
+    background: seagreen;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
 } 
 
 .logo {

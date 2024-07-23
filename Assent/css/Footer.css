@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-decoration:none;
+
+}
+Footer{
+    height: 250px;
+    border-top: 1.5px solid;
+    border-color: black;
+    /* Fondo */
+    color: #fff;
+    background-color: black;
+    /* Posicion */
+    position: relative;
+    top: 67vh;
+
+}
+Footer .Footer-main{
+    padding-top:60px ;
+    /* Display Flex */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+Footer .Derechos{
+    padding-top:6px ;
+    width: 40%;
+    font-size: 100%;
+    transition: 0.7s;
+}
+Footer .Derechos:hover{
+    transform: scale(1.1);
+}
+/* Redes Sociales */
+.Redes-Sociales{
+    height:150px ;
+    width: 200px;
+    /* Display Flex */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
+}
+.Redes-Sociales a{
+    position: relative;
+    color: blueviolet;
+    transition: 0.7s;
+
+}
+.Redes-Sociales a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: -6%;
+    margin: 5px;
+    width: 0;
+    height: 2px;
+    background-color: blueviolet;
+    transition: 0.6s;
+}
+.Redes-Sociales a:hover::before{
+    width: 40%;
+
+}
+.Redes-Sociales h3{
+    transition: 0.7s;
+}
+.Redes-Sociales h3:hover{
+    transform: scale(1.1);
+}
+.Redes-Sociales a:hover{
+    transform: scale(1.1);
+}
+/* Contacto */
+.Contacto-Footer h3{
+    transition: 0.7s;
+}
+.Contacto-Footer h3:hover{
+    transform: scale(1.1);
+}
+.Contacto-Footer{
+    height:150px ;
+    width: 200px;
+    /* Display Flex */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.Contacto-Footer a{
+    position: relative;
+    color: blueviolet;
+    transition: 0.7s;
+}
+.Contacto-Footer a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: -6%;
+    margin: 5px;
+    width: 0;
+    height: 2px;
+    background-color: blueviolet;
+    transition: 0.6s;
+}
+.Contacto-Footer a:hover::before{
+    width: 100%;
+}
+.Contacto-Footer a:hover{
+    transform: scale(1.1);
+}
+/* Lorem */
+.Lorem{
+    position: relative;
+    height: 150px;
+    width: 200px;
+}
+.Lorem p{
+    position: relative;
+    transition: 0.7s;
+
+}
+.Lorem p:hover{
+    position: relative;
+    transform: scale(1.1);
+
+}
+
+/* Imagen */
+.LogoTipo-Footer{
+    width: 220px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.LogoTipo-Footer h3{
+    width: auto;
+    height: 40px;
+    margin-top: 10px;
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+.LogoTipo-Footer .h3_2{
+    width: auto;
+    height: 40px;
+    margin-top: -10px;
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+.LogoTipo-Footer img{
+    margin-top: 10px;
+    transition: 0.7s;
+}
+.LogoTipo-Footer img:hover{
+    transform: scale(1.5);
+    
+}
+.LogoTipo-Footer h3:hover{
+    transform: scale(1.2);
+    
+}
