@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Assent/css/Fondo.css">
+    <link rel="stylesheet" href="/Assent/css/Nav.css">
+    <link rel="stylesheet" href="/Assent/css/glassstyle.css">
+    <link rel="stylesheet" href="/Assent/css/Footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <title>Home</title>
+</head>
+<body>
+
+    <Div class="absolute">
+        <div class="absolute insert-0 justify-center">
+            <div class="bg-shape1 bg-teal opacity-50 bg-blur"></div>
+            <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
+            <div class="bg-shape3 bg-purple opacity-50 bg-blur"></div>
+        </div>
+    </Div>
+    
+    <header class="header">
+        <div class="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="navbar menu">
+            <a href="#">Home</a>
+            <a href="#About">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <hr class="arriva">
+    <div class="contenent-h1">
+        <img class="Logo-incio" src="/Assent/img/logo sin letras.png" alt="">
+        <h1 class="Font" id="About">Fundación Nuestros Niños CMDA.  </h1>
+    </div>
+    <div >
+        <div class="glass" ><p>hola como estas Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laudantium odit similique dignissimos quasi necessitatibus enim culpa inventore saepe nemo ea voluptas omnis dolorum sed illum, quae, impedit, obcaecati modi.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor laudantium maiores enim, modi obcaecati dolorum quisquam, nesciunt ipsam provident velit dolorem at, vitae a deserunt! Inventore laudantium nesciunt eum possimus!
+        </p></div>
+        <div class="glass2"><p>hola como estas Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laudantium odit similique dignissimos quasi necessitatibus enim culpa inventore saepe nemo ea voluptas omnis dolorum sed illum, quae, impedit, obcaecati modi.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor laudantium maiores enim, modi obcaecati dolorum quisquam, nesciunt ipsam provident velit dolorem at, vitae a deserunt! Inventore laudantium nesciunt eum possimus!
+        </p></div>
+    </div>
+    <Footer>
+        <div class="Decoration"></div>
+        <div class="Footer-main">
+            <div class="LogoTipo-Footer">
+                <img src="/Assent/img/Logo_v2.png" alt="Logo" >
+                <h3>Fundación Nuestros</h3><br>
+                <h3 class="h3_2">Niños CMDA</h3>
+            </div>
+            <div class="Redes-Sociales">
+                <br>
+                <h3>Redes Sociales</h3>
+                <a href="">Youtube</a><br>
+                <a href="">Intagram</a><br>
+                <a href="">Facebook</a>
+            </div>
+            <div class="Contacto-Footer">
+                <h3>Contacto</h3>
+                <a href="">+52 55 5555 5555</a><br>
+                <a href="" class="Correo">ongnuestrosninos@gmail.com</a>
+            </div>
+            <div class="Lorem">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim blanditiis eaque omnis iste delectus suscipit dolor eum, sapiente consequatur tempore repellat alias.</p><br>
+            </div>
+        </div>
+        <center><p class="Derechos">Fundacion Nuestros Niños © 2024. Derechos Reservados </p></center>
+        
+    </Footer>
+    
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menu = document.querySelector('.menu');
+        
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+        window.addEventListener("scroll",function(){
+            let header = document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY > 0);
+
+        })
+    </script>
+    
+</body>
+</html>
