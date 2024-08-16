@@ -17,34 +17,70 @@ body {
     justify-content: center;
     margin: 0;
 }
-
 .contenent-h1 {
     width: 100%;
     height: 100vh;
+    position: relative;
+    top: -400px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .Font {
+    font-size: 4vw;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: italic;
     color: #fff;
-    border-right: 3px solid #fff;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 6s steps(40, end) infinite, blinkCursor 0.75s step-end infinite;
+    text-align: center;
+    animation: appear 6s forwards, pulse 2.5s ease-in-out 6s infinite; 
 }
 
-@keyframes typing {
-    0% { width: 0; }
-    50% { width: 100%; }
-    100% { width: 100%; }
+.line1, .line2 {
+    display: inline-block;
 }
 
-@keyframes blinkCursor {
-    50% { border-color: transparent; }
+.word {
+    display: inline-block;
+    opacity: 0;
+    animation: appear 1s forwards;
+}
+
+.line1 .word:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.line1 .word:nth-child(2) {
+    animation-delay: 1.5s;
+}
+
+.line2 .word:nth-child(1) {
+    animation-delay: 3s;
+}
+
+.line2 .word:nth-child(2) {
+    animation-delay: 4s;
+}
+
+@keyframes appear {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.02);
+        opacity: 0.8;
+    }
 }
 
 .header {
@@ -163,9 +199,26 @@ body {
     height: 3px;
     background-color: rgba(232, 80, 232, 0.902);;
 }
+.abautH2{
+    position: absolute;
+    font-size: 3vw;
+    top: 105%;
+    left: 25% ;
+    width: 30%;
+}
+.abautH2-2{
+    position: absolute;
+    font-size: 3vw;
+    top: 168%;
+    left: 52% ;
+    width: 45%;
+}
 @media (max-width: 1024px) {
+
     .Font {
-        font-size: 5vw;
+        font-size: 6vw;
+        position: relative;
+        top: -10%;
     }
 
     .logo {
@@ -180,10 +233,9 @@ body {
 
 @media (max-width: 768px) {
     .Font {
-        font-size: 4vw;
+        font-size: 6vw;
         position: relative;
-        top: 70%;
-
+        top: 10%;
     }
 
     .Logo-incio{
@@ -206,14 +258,28 @@ body {
 }
 
 @media (max-width: 480px) {
+    .abautH2 {
+        position: absolute;
+        top: 110%;
+        left: 24%;
+        font-size: 7vw;
+        width: 70%;
+    }
+    .abautH2-2{
+        position: absolute;
+        font-size: 7vw;
+        top: 200%;
+        left: 24%;
+        width: 70%;
+    }
     .header {
         display: flex;
         justify-content: space-between; /* Cambiado de space-around a space-between */
     }
     .Font {
-        font-size: 5vw;
+        font-size: 9vw;
         position: relative;
-        top: 200px;
+        top: -20%;
     }
     .Logo-incio{
         font-size: 1.2rem;
