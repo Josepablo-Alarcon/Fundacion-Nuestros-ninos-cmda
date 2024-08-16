@@ -126,15 +126,6 @@ body{
 }
 
 @media (max-width: 480px) {
-    .Logo-incio{
-        position: absolute;
-        top: 30%;
-        transition: 1s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-    }
     Footer{
         position: absolute;
         top: 300vh;

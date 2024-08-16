@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.container-carus{}
+/* Carrusel 1 */
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0.5rem;
+    z-index: 10;
+    transform: translateY(-50%);
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.carousel {
+    position: relative;
+    top: -10%;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto;
+}
+/* Carrusel 2 */
+.carousel2 {
+    position: relative;
+    width: 80%;
+    max-width: 800px; /* Ajusta según el tamaño deseado */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de las imágenes */
+}
+
+button.prev2, button.next2 {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0.5rem;
+    z-index: 10;
+    transform: translateY(-50%);
+}
+
+button.prev2 {
+    left: 10px;
+}
+
+button.next2 {
+    right: 10px;
+}
+
+button.prev2:hover, button.next2:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
