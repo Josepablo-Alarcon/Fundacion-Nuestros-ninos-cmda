@@ -1,9 +1,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    height: 100vh;
 }
-.container-carus{}
-/* Carrusel 1 */
 
 button.prev, button.next {
     position: absolute;
@@ -30,11 +29,11 @@ button.prev:hover, button.next:hover {
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-
 .carousel {
     position: relative;
-    top: -10%;
-    width: 80%;
+    top: 25%;
+    width: 90%;
+    height: 600px;
     max-width: 800px;
     margin: auto;
     overflow: hidden;
@@ -45,50 +44,44 @@ button.prev:hover, button.next:hover {
     transition: transform 0.5s ease-in-out;
 }
 
-.carousel-images img {
-    width: 100%;
-    height: auto;
-}
-/* Carrusel 2 */
-.carousel2 {
+.carousel-item {
     position: relative;
-    width: 80%;
-    max-width: 800px; /* Ajusta según el tamaño deseado */
-    margin: 0 auto;
-    overflow: hidden;
+    min-width: 100%; /* Ajusta para que solo se muestre una imagen a la vez */
+    text-align: center;
 }
 
-.carousel-images {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel-images img {
+.carousel-item img {
     width: 100%;
-    height: auto; /* Mantiene la proporción de las imágenes */
+    height: 100%;
 }
 
-button.prev2, button.next2 {
-    position: absolute;
-    top: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
+
+.view-all-button {
+    position: relative;
+    top: -40%;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 24px;
+    background:  rgba(129, 15, 76, 0.868);
     color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 2rem;
-    padding: 0.5rem;
-    z-index: 10;
-    transform: translateY(-50%);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
 }
 
-button.prev2 {
-    left: 10px;
+.view-all-button:hover {
+    background: rgba(129, 15, 76, 0.868);
+    color: #fff;
+    border-color:rgba(231, 33, 139, 0.868);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-button.next2 {
-    right: 10px;
-}
-
-button.prev2:hover, button.next2:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+.view-all-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
